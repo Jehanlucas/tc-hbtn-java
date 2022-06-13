@@ -4,7 +4,5 @@ public class PrintStringConcat {
         String texto2 = "School";
 
         System.out.printf("Bem vindo a "+texto1+" "+texto2+"!\n");
-
-
     }
 }
