@@ -1,5 +1,5 @@
 public class InteiroPositivo {
-    private int valor;
+    private int valor ;
 
     public InteiroPositivo(int valor) {
         this.valor = Integer.valueOf(valor);
@@ -10,10 +10,8 @@ public class InteiroPositivo {
     }
 
     public  boolean ehPrimo(){
-        for (int i = 2; i < valor; i++) {
-            if (valor % i == 0)
+            if (valor % 2 == 0 || valor ==1)
                 return false;
-        }
         return true;
     }
 
