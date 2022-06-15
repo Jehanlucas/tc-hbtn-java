@@ -17,14 +17,15 @@ public class PersonagemGame {
     }
 
     public int receberCura(int quantidadeDeCura){
+        if(quantidadeDeCura >= 100){
+            return  this.saudeAtual = saudeAtual-1;
+        }
+        if (saudeAtual >0) {
+            return saudeAtual += quantidadeDeCura-1;
+        }
 
-        if (saudeAtual > 0 && saudeAtual <= 100 ){
-        saudeAtual += quantidadeDeCura;
-        return quantidadeDeCura;}
-
-        else{
-            return saudeAtual = 0;
-        }}
+        return quantidadeDeCura;
+    }
 
 
 
