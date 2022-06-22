@@ -6,7 +6,7 @@ public class Retangulo extends FormaGeometrica{
 
     @Override
     public double area( ){
-        return largura+altura;
+        return largura*altura;
     }
 
     public double getLargura() {
