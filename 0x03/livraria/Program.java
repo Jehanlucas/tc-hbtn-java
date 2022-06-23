@@ -1,4 +1,5 @@
-
+import exceptions.AutorInvalidoException;
+import exceptions.LivroInvalidoException;
 
 public class Program {
     public static void main(String[] args) {
