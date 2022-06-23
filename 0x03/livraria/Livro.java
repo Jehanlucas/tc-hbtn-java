@@ -17,13 +17,13 @@ public class Livro {
         return titulo;
     }
 
-    public void setTitulo(String titulo) throws LivroInvalidoException {
+    public void setTitulo(String titulo) throws AutorInvalidoException {
 
-            if (titulo.length()>=1){
+            if (titulo.length()>=3){
                 this.titulo = titulo;
             }else {
 
-                throw new LivroInvalidoException("Titulo de livro invalido");
+                throw new AutorInvalidoException("Titulo de livro invalido");
             }
 
     }
@@ -61,3 +61,4 @@ public class Livro {
 
     }
 }
+
