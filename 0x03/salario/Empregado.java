@@ -1,4 +1,3 @@
-package Task0;
 
 public class Empregado {
     private double salarioFixo;

@@ -1,4 +1,3 @@
-package Task0;
 
 public class Departamento  {
     private double valorMeta;

@@ -1,4 +1,4 @@
-package Task0;
+
 
 public class Gerente extends Empregado{
 
