@@ -55,7 +55,7 @@ public class Livro {
             }
 
             else{
-            throw new  LivroInvalidoException("Titulo de livro invalido");
+            throw new  LivroInvalidoException("Preco de livro invalido");
 
         }
 
