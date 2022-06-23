@@ -39,7 +39,7 @@ public class Livro {
                 this.autor = autor;
             }else {
 
-                throw new AutorInvalidoException("Nome do autor invalido");
+                throw new AutorInvalidoException("Nome de autor invalido");
             }
     }
 
