@@ -3,8 +3,7 @@ import exceptions.LivroInvalidoException;
 
 public class Livro {
 
-    final var locale = new Locale("pt", "BR");
-    Locale.setDefault(locale);
+
 
     private String titulo ;
     private String autor ;
