@@ -1,11 +1,9 @@
-import exceptions.AutorInvalidoException;
-import exceptions.LivroInvalidoException;
-
-import java.lang.reflect.Modifier;
 import java.util.Locale;
 
 public class Program {
-
+    public static void main(String[] args) {
+        final var locale = new Locale("pt", "BR");
+        Locale.setDefault(locale);
 
         try {
             Livro livro1 = new Livro(
@@ -79,3 +77,4 @@ public class Program {
         }
     }
 }
+
