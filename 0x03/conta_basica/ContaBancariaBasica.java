@@ -1,6 +1,7 @@
 import exceptions.OperacaoInvalidaException;
 
-{
+
+public class ContaBancariaBasica {
 
     private String numeracao ;
 
