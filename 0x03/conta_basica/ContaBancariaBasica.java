@@ -1,6 +1,5 @@
 import exceptions.OperacaoInvalidaException;
 
-
 public class ContaBancariaBasica {
 
     private String numeracao ;
@@ -91,9 +90,11 @@ public class ContaBancariaBasica {
         return ((juros / 12)*this.saldo)/100;
     }
 
-    public void  aplicarAtualizacaoMensal(){
-        double atualizar =this.saldo = (this.saldo-calcularTarifaMensal())+calcularJurosMensal();
-         System.out.print(atualizar);
+    public void aplicarAtualizacaoMensal(){
+        aplicarAtualizacaoMensal2();
+    }
+    public double aplicarAtualizacaoMensal2(){
+        return this.saldo = (this.saldo-calcularTarifaMensal())+calcularJurosMensal();
     }
 
 
