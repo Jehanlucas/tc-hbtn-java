@@ -59,7 +59,7 @@ public class ContaBancariaBasica {
     }
 
     public void sacar(double valor) throws OperacaoInvalidaException {
-        if (valor>0 && saldo >valor){
+        if (valor>0 || saldo >valor){
             saldo -= valor ;
         }
         else if (valor< 0){
@@ -97,3 +97,4 @@ public class ContaBancariaBasica {
 
 
 }
+
