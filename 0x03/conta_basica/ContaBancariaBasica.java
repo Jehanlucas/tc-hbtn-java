@@ -91,8 +91,9 @@ public class ContaBancariaBasica {
         return ((juros / 12)*this.saldo)/100;
     }
 
-    public  double aplicarAtualizacaoMensal(){
-        return this.saldo = (this.saldo-calcularTarifaMensal())+calcularJurosMensal();
+    public void  aplicarAtualizacaoMensal(){
+        double atualizar =this.saldo = (this.saldo-calcularTarifaMensal())+calcularJurosMensal();
+         System.out.print(atualizar);
     }
 
 
