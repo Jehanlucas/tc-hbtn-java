@@ -1,12 +1,10 @@
-
 public class Pedido {
     private double percentualDesconto;
     private ItemPedido[] itens;
 
     private produtos.Produto produtos;
     private ItemPedido pedido;
-
-
+    
     public Pedido(double percentualDesconto, ItemPedido[] itens) {
         this.percentualDesconto = percentualDesconto;
         this.itens = itens;
