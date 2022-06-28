@@ -4,40 +4,34 @@ public class Pedido {
 
     private produtos.Produto produtos;
     private ItemPedido pedido;
-    
+
     public Pedido(double percentualDesconto, ItemPedido[] itens) {
         this.percentualDesconto = percentualDesconto;
         this.itens = itens;
     }
 
 
-    public void  apresentarResumoPedido() {
 
+    public void apresentarResumoPedido(){
+        System.out.println("------- RESUMO PEDIDO -------");
         double totalPedido = 0 ;
         double totalDesconto = 0 ;
 
-        System.out.println("------- RESUMO PEDIDO -------" );
-        for (ItemPedido pedido : itens) {
-
-
-
-            System.out.printf(
-                    "Tipo: %s  Titulo: %s  Preco: %,.2f  Quant: %d  Total: %,.2f\n",
-                    pedido.getProduto().getClass().getSimpleName(), pedido.getProduto().getTitulo(), pedido.getProduto().getPrecoBruto(), pedido.getQuantidade(),calcularTotal());
+        for (ItemPedido pedido : itens){
+            System.out.printf("Tipo: %s  Titulo: %s  Preco: %,.2f  Quant: %d  Total: %,.2f\n",
+                    pedido.getProduto().getClass().getSimpleName(), pedido.getProduto().getTitulo(), pedido.getProduto().obterPrecoLiquido(),
+                    pedido.getQuantidade(), pedido.getQuantidade() * pedido.getProduto().obterPrecoLiquido());
 
             totalDesconto += (percentualDesconto/100)* (pedido.getQuantidade()* pedido.getProduto().obterPrecoLiquido());
             totalPedido += pedido.getQuantidade()*pedido.getProduto().obterPrecoLiquido();
+
         }
-
-
         System.out.println("----------------------------");
         System.out.printf("DESCONTO: %,.2f\n", totalDesconto);
         System.out.printf("TOTAL PRODUTOS: %,.2f\n", totalPedido);
         System.out.println("----------------------------");
         System.out.printf("TOTAL PEDIDO: %,.2f\n", calcularTotal());
         System.out.println("----------------------------");
-
-
     }
 
     public double calcularTotal() {
