@@ -19,7 +19,7 @@ public class Pedido {
         double totalPedido = 0 ;
         double totalDesconto = 0 ;
 
-        System.out.println("------- RESUMO PEDIDO -------\n" );
+        System.out.println("------- RESUMO PEDIDO -------" );
         for (ItemPedido pedido : itens) {
 
 
