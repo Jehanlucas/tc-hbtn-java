@@ -34,10 +34,10 @@ public class Pedido {
 
         System.out.println("----------------------------");
         System.out.printf("DESCONTO: %,.2f",totalDesconto);
-        System.out.printf("\nTOTAL PRODUTOS:  %,.2f",totalPedido);
-        System.out.println("\n----------------------------");
-        System.out.printf("TOTAL PEDIDO: %,.2f",calcularTotal());
-        System.out.println("\n----------------------------");
+        System.out.printf("TOTAL PRODUTOS:  %,.2f\n",totalPedido);
+        System.out.println("----------------------------");
+        System.out.printf("TOTAL PEDIDO: %,.2f\n",calcularTotal());
+        System.out.println("----------------------------");
 
 
 
