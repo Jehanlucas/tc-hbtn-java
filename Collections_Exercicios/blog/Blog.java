@@ -2,9 +2,13 @@
 import java.util.*;
 
 public class Blog {
-    private static List<Post> postagem = new ArrayList<>();
+    public static List<Post> postagem = new ArrayList<>();
     public static String categoria;
 
+
+    public Blog() {
+        postagem = new ArrayList<>();
+    }
 
 
     public static void adicionarPostagem(Post post) {
@@ -12,7 +16,7 @@ public class Blog {
     }
 
     public static Set<String> obterTodosAutores() {
-        Set<String> autor = new HashSet<>();
+        Set<String> autor = new TreeSet<>();
 
         for (Post post : postagem) {
 
@@ -41,3 +45,4 @@ public class Blog {
         return contador;
     }
     }
+
