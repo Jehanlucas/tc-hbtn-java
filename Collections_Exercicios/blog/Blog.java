@@ -1,23 +1,23 @@
 import java.util.*;
 
 public class Blog {
-      List<Post> postagens = new ArrayList<>();
+      List<Post> postagem ;
      String categoria;
 
 
     public Blog() {
-        postagens = new ArrayList<>();
+        postagem = new ArrayList<>();
     }
 
 
     public  void adicionarPostagem(Post post) {
-        postagens.add(post);
+        postagem.add(post);
     }
 
     public  Set<String> obterTodosAutores() {
         Set<String> autor = new TreeSet<>();
 
-        for (Post post : postagens) {
+        for (Post post : postagem) {
 
             autor.add(post.getAutor());
 
@@ -32,15 +32,16 @@ public class Blog {
 
         int total=0;
 
-        for(int i = 0; i < postagens.size(); i++) {
-            for(int j = 0; j < postagens.size() ; j++) {
-                if(postagens.get(i).getCategoria().equals(postagens.get(j).getCategoria())) {
+        for(int i = 0; i < postagem.size(); i++) {
+            for(int j = 0; j < postagem.size() ; j++) {
+                if(postagem.get(i).getCategoria().equals(postagem.get(j).getCategoria())) {
                     total++;
                 }
             }
-            contador.put(postagens.get(i).getCategoria(), total);
+            contador.put(postagem.get(i).getCategoria(), total);
             total = 0;
         }
         return contador;
     }
     }
+
