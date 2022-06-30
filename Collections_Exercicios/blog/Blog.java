@@ -2,8 +2,8 @@
 import java.util.*;
 
 public class Blog {
-    public static List<Post> postagem = new ArrayList<>();
-    public static String categoria;
+      List<Post> postagem = new ArrayList<>();
+     String categoria;
 
 
     public Blog() {
@@ -11,11 +11,11 @@ public class Blog {
     }
 
 
-    public static void adicionarPostagem(Post post) {
+    public  void adicionarPostagem(Post post) {
         postagem.add(post);
     }
 
-    public static Set<String> obterTodosAutores() {
+    public  Set<String> obterTodosAutores() {
         Set<String> autor = new TreeSet<>();
 
         for (Post post : postagem) {
@@ -28,7 +28,7 @@ public class Blog {
 
     }
 
-    public static Map<String, Integer> obterContagemPorCategoria() {
+    public  Map<String, Integer> obterContagemPorCategoria() {
         Map<String, Integer> contador = new TreeMap<>();
 
         int total=0;
@@ -45,4 +45,3 @@ public class Blog {
         return contador;
     }
     }
-
