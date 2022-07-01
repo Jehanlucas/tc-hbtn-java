@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Celular {
 
-    private ArrayList<Contato> telefone ;
+    ArrayList<Contato> telefone ;
 
     public Celular() {
        telefone = new ArrayList<>();
