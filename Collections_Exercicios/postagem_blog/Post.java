@@ -1,7 +1,3 @@
-
-import Autor;
-import Categorias;
-
 public class Post implements Comparable<Post> {
 
     private Autor autor;
