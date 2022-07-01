@@ -1,59 +1,74 @@
-import java.util.Objects;
+public class Autor implements Comparable<Autor> {
 
-public class Autor implements Comparable<Autor>{
+	private String nome;
+	private String sobrenome;
 
-    private String nome ;
+	public Autor() {
 
-    private String sobrenome ;
+	}
 
-    public Autor(String nome, String sobrenome) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-    }
+	public Autor(String nome, String sobrenome) {
+		super();
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+	}
 
-    public String getNome() {
-        return nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public String getSobrenome() {
+		return sobrenome;
+	}
 
-    public String getSobrenome() {
-        return sobrenome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
-    }
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Autor autor = (Autor) o;
-        return nome.equals(autor.nome) && sobrenome.equals(autor.sobrenome);
-    }
+	@Override
+	public String toString() {
+		return this.nome + " " + this.sobrenome;
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(nome, sobrenome);
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + ((sobrenome == null) ? 0 : sobrenome.hashCode());
+		return result;
+	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Autor other = (Autor) obj;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (sobrenome == null) {
+			if (other.sobrenome != null)
+				return false;
+		} else if (!sobrenome.equals(other.sobrenome))
+			return false;
+		return true;
+	}
 
-    @Override
-    public String toString() {
-        return nome + sobrenome;
-    }
+	@Override
+	public int compareTo(Autor autor) {
+		return this.toString().compareTo(autor.toString());
 
+	}
 
-    public int compareTo(Autor autor) {
-        int result = this.getNome().compareTo(autor.getNome());
-
-        if(result == 0) {
-            return this.getSobrenome().compareTo(autor.getSobrenome());
-        }
-        return result;
-    }
 }
-
