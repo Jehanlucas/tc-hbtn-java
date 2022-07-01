@@ -1,18 +1,17 @@
-
 import java.util.ArrayList;
 
 public class Celular {
 
-    ArrayList<Contato> telefone ;
+    private ArrayList<Contato> contatos;
 
     public Celular() {
-       telefone = new ArrayList<>();
+        contatos = new ArrayList<>();
     }
 
     public  int obterPosicaoContato(String nomeContato){
-        for (Contato nome: telefone ) {
+        for (Contato nome: contatos) {
             if (nome.getNome().equals(nomeContato)){
-                return telefone.indexOf(nome) ;
+                return contatos.indexOf(nome) ;
             }
         }
         return -1;
@@ -25,7 +24,7 @@ public class Celular {
         if(aux != -1){
             throw new IllegalArgumentException("Nao foi possivel adicionar contato. Contato jah existente com esse nome");
         }else {
-            telefone.add(contato);
+            contatos.add(contato);
         }
     }
 
@@ -43,19 +42,19 @@ public class Celular {
             throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato jah existente com esse nome");
         }
 
-         telefone.set(i,novoContato);
+         contatos.set(i,novoContato);
     }
 
     public  void removerContato(Contato contato) {
         int i = obterPosicaoContato(contato.getNome());
         if(i != -1){
-            telefone.remove(i);
+            contatos.remove(i);
         }else
             throw new IllegalArgumentException("Nao foi possivel remover contato. Contato nao existe");
     }
 
     public void listarContatos(){
-        for (Contato lista : telefone){
+        for (Contato lista : contatos){
              System.out.println(lista.getNome()+" -> "+ lista.getNumero() +" ("+lista.getTipo()+")");
         }
     }
