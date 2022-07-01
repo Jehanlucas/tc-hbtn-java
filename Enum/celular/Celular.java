@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 
 public class Celular {
@@ -7,7 +6,7 @@ public class Celular {
     private ArrayList<Contato> telefone ;
 
     public Celular() {
-        this.telefone = new ArrayList<>();
+       telefone = new ArrayList<>();
     }
 
     public  int obterPosicaoContato(String nomeContato){
