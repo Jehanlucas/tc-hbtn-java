@@ -1,6 +1,4 @@
 
-import Banco ; 
-
 
 public class Program {
 
