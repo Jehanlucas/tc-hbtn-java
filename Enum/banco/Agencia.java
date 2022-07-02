@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+import Banco;
+import Cliente;
+
 public class Agencia {
 
     String nome ;
