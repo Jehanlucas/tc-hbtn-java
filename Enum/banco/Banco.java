@@ -1,8 +1,4 @@
 
-
-import Agencia;
-import Cliente;
-
 import java.util.ArrayList;
 
 public class Banco {
