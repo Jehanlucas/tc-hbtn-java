@@ -1,6 +1,6 @@
 
 
-import interfaces2.atividades.Atividade;
+import atividades.Atividade;
 
 public class MaquinaWorkflow {
 

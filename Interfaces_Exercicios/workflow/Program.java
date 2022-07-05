@@ -1,8 +1,8 @@
 
-import interfaces2.atividades.CarregarVideo;
-import interfaces2.atividades.CodificarVideo;
-import interfaces2.atividades.EnviarEmail;
-import interfaces2.atividades.ModificarStatusVideo;
+import atividades.CarregarVideo;
+import atividades.CodificarVideo;
+import atividades.EnviarEmail;
+import atividades.ModificarStatusVideo;
 
 public class Program {
     public static void main(String[] args) {
