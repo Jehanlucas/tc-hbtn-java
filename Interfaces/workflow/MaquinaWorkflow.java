@@ -1,6 +1,6 @@
 
 
-import atividades.Atividade;
+import Atividade;
 
 public class MaquinaWorkflow {
 

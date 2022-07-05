@@ -1,7 +1,7 @@
-package interfaces2;
 
-import atividades.Atividade;
-import atividades.CarregarVideo;
+
+import Atividade;
+import CarregarVideo;
 
 public class Workflow {
     public void registrarAtividade(Atividade atividade) {
