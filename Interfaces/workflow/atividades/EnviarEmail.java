@@ -1,4 +1,4 @@
-package atividades;
+package interfaces2.atividades;
 
 public class EnviarEmail implements Atividade{
 

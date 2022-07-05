@@ -1,4 +1,9 @@
+package interfaces2;
 
+import interfaces2.atividades.CarregarVideo;
+import interfaces2.atividades.CodificarVideo;
+import interfaces2.atividades.EnviarEmail;
+import interfaces2.atividades.ModificarStatusVideo;
 
 public class Program {
     public static void main(String[] args) {
