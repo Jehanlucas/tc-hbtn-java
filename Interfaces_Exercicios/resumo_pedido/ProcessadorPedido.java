@@ -1,6 +1,6 @@
-package provedores;
 
-import .Frete;
+
+import provedores.Frete;
 import provedores.ProvedorFrete;
 
 public class ProcessadorPedido {
