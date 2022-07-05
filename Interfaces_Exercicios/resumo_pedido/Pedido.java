@@ -1,10 +1,7 @@
 import provedores.Frete;
 
+
 public class Pedido {
-
-
-
-
     private double codigo;
     private double peso;
     private double total ;
@@ -29,9 +26,6 @@ public class Pedido {
         return peso;
     }
 
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
 
     public double getTotal() {
         return total;
@@ -49,3 +43,4 @@ public class Pedido {
         this.frete = frete;
     }
 }
+
