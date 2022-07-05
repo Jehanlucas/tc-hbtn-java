@@ -7,13 +7,12 @@ public class Pedido {
 
 
 
-    private double codigo;
+    private int codigo;
     private double peso;
     private double total ;
     private Frete frete;
 
-
-    public Pedido(double codigo, double peso, double total) {
+    public Pedido(int codigo, double peso, double total) {
         this.codigo = codigo;
         this.peso = peso;
         this.total = total;
@@ -23,7 +22,7 @@ public class Pedido {
         return codigo;
     }
 
-    public void setCodigo(double codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -48,3 +47,4 @@ public class Pedido {
         this.frete = frete;
     }
 }
+
