@@ -1,5 +1,3 @@
-package provedores;
-
 import provedores.Frete;
 
 public class Pedido {
