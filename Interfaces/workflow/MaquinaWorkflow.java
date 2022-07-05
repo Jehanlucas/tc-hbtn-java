@@ -1,7 +1,5 @@
 
 
-import atividades.Atividade;
-
 public class MaquinaWorkflow {
 
 
