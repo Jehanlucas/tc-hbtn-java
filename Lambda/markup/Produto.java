@@ -11,7 +11,7 @@ public class Produto {
     public Produto(Double preco, String nome) {
         this.nome = nome;
         this.preco = preco;
-        this.percentualMarkUp = 0.01;
+        this.percentualMarkUp = 0.1;
 
     }
 
