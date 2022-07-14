@@ -40,9 +40,8 @@ public class Estudante implements Serializable {
 
     @Override
     public String toString() {
-        return "Estudante{"nome='" + nome + '\'' +
-                "idade=" + idade +
-                ", senha='" + senha + '\'' +
-                '}';
+
+       return String.format("Estudante{nome='%s', idade='%d', senha='%s'}",nome,idade,senha);
+
     }
 }
