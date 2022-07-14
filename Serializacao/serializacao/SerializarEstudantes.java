@@ -46,7 +46,7 @@ public class SerializarEstudantes<E> {
 
 
         } catch (Exception e){
-            throw new IllegalArgumentException("Nao foi possivel desserializar");
+            System.out.println("Nao foi possivel desserializar");
         }
         finally {
             if (obj != null){
